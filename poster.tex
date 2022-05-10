@@ -1,0 +1,91 @@
+\documentclass[t,dvipsnames]{beamer}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{exscale} % Fixes issues with lmodern math symbols
+\usepackage{graphicx}
+\graphicspath{ {./images/} }
+\usepackage{tikz}
+\usetikzlibrary{positioning, arrows.meta}
+
+\tikzset{%
+  eda/.style={-{Latex[scale=3]}},
+  edc/.style={eda, color=black!25},
+  rv/.style={draw, circle, minimum size=3cm},
+  ob/.style={rv, fill=black!25}
+}
+
+\usepackage{listings}
+\lstset{%
+  language=Lisp,
+  basicstyle=\ttfamily\footnotesize
+}
+
+\usepackage[orientation=portrait,size=a0,scale=1.4]{kthposter}
+\title{%
+  \huge My Title
+}
+\author{%
+  \textit{CDIS Spring Conference, 24 May 2022}\\
+  Author1 (\texttt{author1@kth.se})
+  \and
+  Author2 (\texttt{author2@kth.se})
+}
+\institute{%
+  Center for Cyber Defense and Information Security (CDIS)\\
+  KTH Royal Institute of Technology
+}
+
+\logoLeft{%
+  \includegraphics[height=9cm, width=9cm]{kth_logo} \\
+}
+
+\logoRight{%
+  \hfill
+  \begin{tikzpicture}
+    \node[inner sep=0cm] (pic)%
+    {\includegraphics[height=9cm, width=9cm, keepaspectratio]{cdis.png}};
+  \end{tikzpicture}
+}
+
+\newlength{\cheight}
+\setlength{\cheight}{103cm}
+
+\begin{document}
+\begin{frame}[fragile]{}
+  \begin{minipage}[c][\cheight][t]{0.48\linewidth}
+    \begin{block}{Motivation}
+TODO
+    \end{block}
+
+\vspace{1cm}
+    \begin{block}{Use Case}
+TODO
+  \end{block}
+
+  \vspace{1cm}
+  \begin{block}{Formal Model}
+TODO
+\end{block}
+  \vspace{1cm}
+  \begin{block}{References}
+TODO
+  \end{block}
+\end{minipage}
+\hfill
+\begin{minipage}[c][\cheight][t]{0.48\linewidth}
+  \begin{block}{Our Approach}
+    TODO
+  \end{block}
+ \vspace{1cm}
+  \begin{block}{Results}
+TODO
+  \end{block}
+
+ \vspace{1cm}
+  \begin{block}{Theorems}
+\end{block}
+\end{minipage}
+\end{frame}
+\end{document}
