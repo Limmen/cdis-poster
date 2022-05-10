@@ -1,5 +1,7 @@
-# kth-poster
-A KTH-themed LaTeX poster template/example based on beamerposter.
+# cdis-poster
+A KTH-CDIS-themed LaTeX poster template/example based on beamerposter.
+
+Extension of: https://github.com/dlunde/kth-poster
 
 ## Usage
-See `example.tex`.
+See `poster.tex`.
